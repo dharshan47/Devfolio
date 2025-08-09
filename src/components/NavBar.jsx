@@ -3,7 +3,7 @@ import { CiMenuBurger } from "react-icons/ci";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const handleMenu = () => setIsOpen(false)
+  const handleMenu = () => setIsOpen(false);
 
   return (
     <>
@@ -30,10 +30,20 @@ const NavBar = () => {
         </div>
 
         {/* Mobile menu */}
-        <div className={`${isOpen ? "block" : "hidden"} sm:hidden bg-gray-100 text-black space-y-2 px-4 pb-3`}>
-          <a href="#About" className="text-lg block" onClick={handleMenu}>About</a>
-          <a href="#Skills" className="text-lg block" onClick={handleMenu}>Skills</a>
-          <a href="#Contact" className="text-lg block" onClick={handleMenu}>Contact</a>
+        <div
+          className={`${
+            isOpen ? "block" : "hidden"
+          } sm:hidden bg-gray-100 text-black space-y-2 px-4 pb-3`}
+        >
+          <a href="#About" className="text-lg block" onClick={handleMenu}>
+            About
+          </a>
+          <a href="#Skills" className="text-lg block" onClick={handleMenu}>
+            Skills
+          </a>
+          <a href="#Contact" className="text-lg block" onClick={handleMenu}>
+            Contact
+          </a>
         </div>
       </nav>
     </>

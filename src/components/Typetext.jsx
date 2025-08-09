@@ -36,7 +36,7 @@ const Typetext = ({ phrases }) => {
       <div>
         <h2 className=" text-xl sm:text-2xl flex justify-center font-semibold min-h-[2.5rem] min-w-[300px]">
           {text}
-         {/* { text && <span className="animate-pulse ml-1">|</span> } */}
+          {/* { text && <span className="animate-pulse ml-1">|</span> } */}
         </h2>
       </div>
     </>
