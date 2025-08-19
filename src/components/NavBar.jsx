@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { CiMenuBurger } from "react-icons/ci";
+import {HashLink} from 'react-router-dom'
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,9 +16,9 @@ const NavBar = () => {
 
           {/* Desktop nav */}
           <div className="hidden sm:flex gap-6 p-2">
-            <a href="#About">About</a>
-            <a href="#Skills">Skills</a>
-            <a href="#Contact">Contact</a>
+            <HashLink smooth to='#about'>About</HashLink>
+            <HashLink smooth to="#Skills">Skills</HashLink>
+            <HashLink smooth to="#Contact">Contact</HashLink>
           </div>
 
           {/* Burger icon (mobile) */}
@@ -35,15 +36,15 @@ const NavBar = () => {
             isOpen ? "block" : "hidden"
           } sm:hidden bg-gray-100 text-black space-y-2 px-4 pb-3`}
         >
-          <a href="#About" className="text-lg block" onClick={handleMenu}>
+          <HashLink  smooth to="#About" className="text-lg block" onClick={handleMenu}>
             About
-          </a>
-          <a href="#Skills" className="text-lg block" onClick={handleMenu}>
+          </HashLink>
+          <HashLink smooth to="#Skills" className="text-lg block" onClick={handleMenu}>
             Skills
-          </a>
-          <a href="#Contact" className="text-lg block" onClick={handleMenu}>
+          </HashLink>
+          <HashLink smooth to="#Contact" className="text-lg block" onClick={handleMenu}>
             Contact
-          </a>
+          </HashLink>
         </div>
       </nav>
     </>
