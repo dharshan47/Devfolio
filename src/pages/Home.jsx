@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div className="font-sans">
+    <div className=" min-h-screen font-sans">
       <NavBar />
       <section id="about"></section>
       <section id="skills"></section>
