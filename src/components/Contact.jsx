@@ -62,7 +62,7 @@ const Contact = () => {
           />
           <button
             type="submit"
-            className=" font-lightbold text-white px-2 py-1 rounded-lg bg-blue-600 cursor-pointer hover:bg-blue-700"
+            className=" font-lightbold text-white px-2 py-1 rounded-lg bg-blue-600 cursor-pointer hover:bg-blue-700 w-full"
           >
             Submit
           </button>
