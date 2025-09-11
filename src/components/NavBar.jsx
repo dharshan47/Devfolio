@@ -16,9 +16,9 @@ const NavBar = () => {
 
           {/* Desktop nav */}
           <div className="hidden sm:flex gap-6 p-2">
-            <HashLink smooth to='#about'>About</HashLink>
-            <HashLink smooth to="#Skills">Skills</HashLink>
-            <HashLink smooth to="#Contact">Contact</HashLink>
+            <HashLink smooth to='about'>About</HashLink>
+            <HashLink smooth to="Skills">Skills</HashLink>
+            <HashLink smooth to="Contact">Contact</HashLink>
           </div>
 
           {/* Burger icon (mobile) */}
@@ -36,13 +36,13 @@ const NavBar = () => {
             isOpen ? "block" : "hidden"
           } sm:hidden bg-gray-100 text-black space-y-2 px-4 pb-3`}
         >
-          <HashLink  smooth to="#About" className="text-lg block" onClick={handleMenu}>
+          <HashLink  smooth to="#about" className="text-lg block" onClick={handleMenu}>
             About
           </HashLink>
-          <HashLink smooth to="#Skills" className="text-lg block" onClick={handleMenu}>
+          <HashLink smooth to="#skills" className="text-lg block" onClick={handleMenu}>
             Skills
           </HashLink>
-          <HashLink smooth to="#Contact" className="text-lg block" onClick={handleMenu}>
+          <HashLink smooth to="#contact" className="text-lg block" onClick={handleMenu}>
             Contact
           </HashLink>
         </div>
